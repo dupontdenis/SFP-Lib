@@ -26,7 +26,7 @@ export const statusWinner = (shape1, shape2) => {
   let status = "Player1 loses !"
   if (shape1.shape == shape2.shape) {
     status = "Draw"
-  } else if (shape2.shape == ruleGameMap.get(shape1).shape) {
+  } else if (ruleGameMap.get(shape1).shape == shape2.shape ) {
     status = "Player1 wins"
   }
   return status;
