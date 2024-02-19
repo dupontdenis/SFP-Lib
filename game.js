@@ -16,7 +16,7 @@ const printRules = (rule) => {
   let i = 0;
   console.log("Rules of the game")
   for (const [shape1, shape2] of rule) {
-    console.log(`Rule ${++i}: ${shape1.shape} vins ${shape2.shape}`)
+    console.log(`Rule ${++i}: ${shape1.shape} wins ${shape2.shape}`)
   }
 }
 printRules(ruleGameMap);
